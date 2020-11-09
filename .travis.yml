@@ -15,10 +15,10 @@ addons:
 
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  - sonar-scanner
+  - sonar.python.coverage.reportPaths
   
-script:
-  - echo "Hello, World!"
+# script:
+#   - echo "Hello, World!"
   
 # allow gui output
 services:
