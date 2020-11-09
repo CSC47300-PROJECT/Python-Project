@@ -18,8 +18,7 @@ script:
   - sonar-scanner
   
 script:
-  - - echo "Hello, World!"
-  
+  - coverage-reports/*coverage-*.xml
   
 # allow gui output
 services:
