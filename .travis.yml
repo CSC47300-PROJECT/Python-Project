@@ -13,3 +13,5 @@ script:
 # allow gui output
 services:
   - xvfb
+  
+ dist: xenial
