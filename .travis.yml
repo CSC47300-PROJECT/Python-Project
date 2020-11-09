@@ -5,7 +5,7 @@ python:
  
 # command to install dependencies
 install:
-  - npm ci
+  - pip freeze > requirements.txt
 
 addons:
   sonarcloud:
@@ -18,7 +18,7 @@ script:
   - sonar-scanner
   
 script:
-  - npm run test
+  - - echo "Hello, World!"
   
   
 # allow gui output
