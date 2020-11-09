@@ -20,7 +20,7 @@ script:
 script:
   - echo "Hello, World!"
   
-allow gui output
+# allow gui output
 services:
   - xvfb
   
