@@ -4,8 +4,19 @@ python:
   - "3.6"      # current default Python on Travis CI
  
 # command to install dependencies
-install:
-  - pip freeze > requirements.txt
+# install:
+#   - pip freeze > requirements.txt
+
+
+  install:
+        - pip install -r requirements.txt
+        - pip install pytest
+        - pip install codecov
+        - pip install pytest-cov
+      script:
+        - pytest --cov-report term --cov=backend backend/UnitTests/ 
+      after_success: 
+        - codecov
 
 addons:
   sonarcloud:
@@ -17,11 +28,11 @@ script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
   - sonar-scanner
   
-script:
-  - echo "Hello, World!"
+# script:
+#   - echo "Hello, World!"
   
-# allow gui output
-services:
-  - xvfb
+# # allow gui output
+# services:
+#   - xvfb
   
 
