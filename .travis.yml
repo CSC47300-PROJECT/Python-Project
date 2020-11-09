@@ -8,7 +8,7 @@ install:
   - pip freeze > requirements.txt
 # command to run tests
 script:
-  - make
+  - pytest
   
 # allow gui output
 services:
