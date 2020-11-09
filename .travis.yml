@@ -6,15 +6,10 @@ python:
 # command to install dependencies
 install:
   - pip freeze > requirements.txt
-# command to run tests
-script:
-  - echo "Hello, World!"
   
-# allow gui output
-services:
-  - xvfb
   
- dist: xenial
+  
+   dist: xenial
  
  addons:
   sonarcloud:
@@ -24,3 +19,12 @@ services:
 script:
   # other script steps might be done before running the actual analysis
   - sonar-scanner
+# command to run tests
+script:
+  - echo "Hello, World!"
+  
+# allow gui output
+services:
+  - xvfb
+  
+
