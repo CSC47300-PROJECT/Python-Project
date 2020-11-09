@@ -4,8 +4,8 @@ python:
   - "3.6"      # current default Python on Travis CI
  
 # command to install dependencies
-# install:
-#   - pip freeze > requirements.txt
+install:
+  - pip freeze > requirements.txt
 
 #  install:
 #    - pip install -r requirements.txt
