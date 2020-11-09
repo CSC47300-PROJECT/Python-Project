@@ -9,11 +9,11 @@ python:
 
  install:
    - pip install -r requirements.txt
-   - pip install pytest
+#    - pip install pytest
 #    - pip install codecov
 #    - pip install pytest-cov
- script:
-   - pytest --cov-report term --cov=backend backend/UnitTests/ 
+#  script:
+#    - pytest --cov-report term --cov=backend backend/UnitTests/ 
 # after_success: 
 #     - codecov
 
