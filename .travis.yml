@@ -15,3 +15,12 @@ services:
   - xvfb
   
  dist: xenial
+ 
+ addons:
+  sonarcloud:
+    organization: "csc47300-project"
+    token:
+      secure: "ef89423cc704ed1d452dec8fe4614af387e09def"
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
