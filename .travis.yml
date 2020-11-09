@@ -18,7 +18,7 @@ script:
   - sonar-scanner
   
 script:
-  - coverage-reports/*coverage-*.xml
+  - coverage-reports/a.xml
   
 # allow gui output
 services:
