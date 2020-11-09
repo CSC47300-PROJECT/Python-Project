@@ -15,11 +15,11 @@ addons:
 
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  analysis
+
   - sonar-scanner
   
-script:
-  - echo "Hello, World!"
+# script:
+#   - echo "Hello, World!"
   
 # allow gui output
 services:
