@@ -9,3 +9,7 @@ install:
 # command to run tests
 script:
   - pytest
+  
+# allow gui output
+services:
+  - xvfb
