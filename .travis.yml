@@ -30,8 +30,8 @@ script:
 
 
 # allow gui output
-# services:
-#   - xvfb
+services:
+  - xvfb
 
 
 
