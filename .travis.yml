@@ -21,7 +21,9 @@ script:
 script:
   - python3 HelloWorld.py
   
-  
+ after_success:
+        - coverage report -m
+        - coverage xml
 # allow gui output
 services:
   - xvfb
