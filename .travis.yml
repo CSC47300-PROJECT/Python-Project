@@ -2,13 +2,12 @@ language: python
 python:
   - "3.6"
 
-before_install:
-        - choco install python3
-        - export PATH="/c/Python37:/c/Python37/Scripts:$PATH"
-        - python -m pip install --upgrade pip wheel
 install:
-  - pip install -r requirements.txt
-   - pip install coverage
+ - pip freeze > requirements.txt
+  - pip install coverage
+   after_success:
+         - coverage report -m
+         - coverage xml 
 
 addons:
   sonarcloud:
@@ -23,9 +22,7 @@ script:
 script:
   - python3 HelloWorld.py
   - coverage run HelloWorld.py
-#  after_success:
-#         - coverage report -m
-#         - coverage xml 
+
 
 # allow gui output
 services:
