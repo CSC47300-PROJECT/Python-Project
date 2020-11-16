@@ -12,11 +12,13 @@ install:
    - pip freeze > pytest
    - pip freeze > codecov
    - pip freeze > pytest-cov
- script:
-   - pytest --cov-report term --cov=backend backend/UnitTests/ 
+#  script:
+#    - pytest --cov-report term --cov=backend backend/UnitTests/ 
 after_success: 
-    - codecov
-
+   - coverage report -m
+        - coverage xml
+- stage: sonarcloud
+      name: "SolarCloud Scan"
 addons:
   sonarcloud:
     organization: "csc47300-project"
