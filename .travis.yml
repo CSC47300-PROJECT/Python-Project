@@ -20,7 +20,7 @@ script:
   
 script:
   - python3 HelloWorld.py
-  - coverage HelloWorld.py
+  
   
 # allow gui output
 services:
