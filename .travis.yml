@@ -22,7 +22,7 @@ script:
 script:
   - python3 HelloWorld.py
   - coverage run HelloWorld.py
-
+after_success:
  - coverage report -m
  - coverage xml 
 
