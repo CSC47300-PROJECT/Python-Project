@@ -1,5 +1,4 @@
-- stage: test
-      name: Python"
+
 language: python
 # python:
  
@@ -13,12 +12,9 @@ install:
   script:
   - python3 HelloWorld.py
   - coverage run HelloWorld.py
-   
- after_success:
-        - coverage report -m
-        - coverage xml
- - stage: sonarcloud
-      name: "SolarCloud Scan"
+  - coverage report -m
+  - coverage xml
+
 
 addons:
   sonarcloud:
