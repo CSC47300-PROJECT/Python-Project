@@ -1,16 +1,13 @@
 language: python
 python:
  
+  - "3.6"      # current default Python on Travis CI
+ 
 # command to install dependencies
 install:
    - pip freeze > requirements.txt
    - pip install coverage
-   
 
-#   after_success:
-#         - coverage report -m
-#         - coverage xml
-# - stage: sonarcloud
 addons:
   sonarcloud:
     organization: "csc47300-project"
@@ -20,13 +17,16 @@ addons:
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
   - sonar-scanner
-  script:
+  
+script:
   - python3 HelloWorld.py
   -coverage run HelloWorld.py
+  
 
 # allow gui output
 services:
   - xvfb
+
 
 
   
