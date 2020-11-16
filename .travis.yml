@@ -23,7 +23,6 @@ addons:
       secure: "BEuXePf6gbUqlmqwjFsRpYg97pm88LA+z48vs30Ral/ImHqgZzxlFAxcyhK3UJAzKiS8y5GtistVPVr6hLbwusLX7gC9w3uuFXii7S1Ci70nKnx/Oarg/DwXGfG17sum0NSCMEevxGBVgyrpCvLR0n3NADNqCyiewJbNoBTgYq/d6OOjLiytOFAIlVE6twnNL8yaYYvKWbRs6xxbwuU0Z4ZQVOQtbynjxVfhr//2JXkn9cOiIjl2um6ySKnLGAYOi7v/i5cnauuXExIzf9kbdN1U0IwwUiVUZXYZ5rx7Jtu07d+PHs+FMkrWHA020k20GHDzVELSxbIg1Lml0aHcq6xdHNLdcpkaLd7aFMEKazIY7mra7g3werwPbC2CnWzKDan8PILRCQdpEzmBx3WH1s4vWFTsd/Aow7VVOP0GFuQL8+c/pnfAs+3HSBID63fME+R5o+15reGOYDNaGjoYpgylstusiajDpdOsDrBi3I9la0WQxtaUWEYHiq2ZH4MRdvRfTOBTHF/tvLoNIm03e+CRNI02NNrMTcLmCG64I32QvzxlmL6gh8cJgrF1UsUlZScFk/JXBZsyIJTT3GeaJpaCsiqp/6KIeWpLZQgh798DzZjl80itq6HlaKtQUfOy4oQuumXUX81hpENROQao2UX/7fi5367+CO/mn5xFYMw="
 
 script:
-  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
   - sonar-scanner
 
 
