@@ -1,7 +1,7 @@
 language: python
 python:
   - "3.6"
-os: windows
+
 before_install:
         - choco install python3
         - export PATH="/c/Python37:/c/Python37/Scripts:$PATH"
@@ -23,9 +23,9 @@ script:
 script:
   - python3 HelloWorld.py
   - coverage run HelloWorld.py
-#  after_success:
-#         - coverage report -m
-#         - coverage xml 
+ after_success:
+        - coverage report -m
+        - coverage xml 
 
 # allow gui output
 services:
