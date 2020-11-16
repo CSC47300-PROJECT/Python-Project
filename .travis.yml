@@ -3,16 +3,16 @@ python:
  
 # command to install dependencies
 install:
-   - pip install -r requirements.txt
+   - pip freeze > requirements.txt
    - pip install coverage
    
 script:
   - python3 HelloWorld.py
   -coverage run HelloWorld.py
-  after_success:
-        - coverage report -m
-        - coverage xml
-- stage: sonarcloud
+#   after_success:
+#         - coverage report -m
+#         - coverage xml
+# - stage: sonarcloud
 addons:
   sonarcloud:
     organization: "csc47300-project"
