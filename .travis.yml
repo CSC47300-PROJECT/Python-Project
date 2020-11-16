@@ -5,6 +5,12 @@ python:
 install:
  - pip freeze > requirements.txt
   - pip install coverage
+  
+  
+  script:
+  - python3 HelloWorld.py
+  - coverage run HelloWorld.py
+   
    after_success:
          - coverage report -m
          - coverage xml 
@@ -19,14 +25,12 @@ script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
   - sonar-scanner
   
-script:
-  - python3 HelloWorld.py
-  - coverage run HelloWorld.py
+
 
 
 # allow gui output
-services:
-  - xvfb
+# services:
+#   - xvfb
 
 
 
