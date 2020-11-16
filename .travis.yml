@@ -1,15 +1,12 @@
-
 language: python
-# python:
+python:
  
-#   - "3.6"
+  - "3.6"      # current default Python on Travis CI
+ 
 # command to install dependencies
 install:
-  - pip install -r requirements.txt
-  - pip install coverage
-  
-  
- 
+   - pip freeze > requirements.txt
+   - pip install coverage
 
 addons:
   sonarcloud:
