@@ -19,7 +19,7 @@ after_success:
 addons:
   sonarcloud:
     organization: "csc47300-project"
-    sonar.login: "JiandeLi1@github"
+    token:
       secure: "U3zeDwtLT/i4AGW3PSMqLN5QR+XRPCyQdL+krDqVJ+vSqwWgUHGBsRF+ZShaU6aEfJogfqPFx4i8kvgj8VfVqPVWKKDEDACEv8a4KDaItw8Ucvcz4TIQ1dWYTTy5j30FUCGCOBkGKv4f3XYpc88SgycnSig6EX+JB2+OuQDTmsVRi+zbPi7wrFwzYMfYP28tortu7nIapHetKoTwMeU2Hew2p+lEjQyaa+tpB4LpkhGOQlNF2JZf9iOxcmIy3XsV2qwfFLXUR1dCDvi+PKzn0bGCvClJYstn0zFLRyV6nfORGftZkCE1bxCz6IsrBZ0aYh+2Bl86HbpywoR6OAeKBPIleULkrPX3D0NUJ7SMwbLqTDgRVN781KSbhsAW65Wu0CifEhA+2NfXGyCkEbvDjtKGjUaBlq0j399+9MsUe89nP0pG/NF13T6JwcWG7yergGdsOrh3XKif0vz1rgxqhEz+d+yHkP8TJrzR66WplVVSkqxm+zhruvzgjhCXneuwHcmbeO+Ke+O9zUxre7dYxmEUlzRLlDF8ZY2Z9LEl0OyNDOgQT/MxGWbZSRjbe0WJk+HqucjaTUALmXQdK4zPRaToeAkPzwGGtXcZQ150oZKzQtsCeuHrqIendUE1XnD5z8OExfswM3DZetFbX1Iy4z1YD4tbBgR4EcTZ6dfJ1UI="
       
 
