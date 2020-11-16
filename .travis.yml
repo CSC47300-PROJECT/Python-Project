@@ -17,18 +17,18 @@ addons:
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
   - sonar-scanner
-   script:
+
+
+script:
   - python3 HelloWorld.py
   - coverage run HelloWorld.py
-  - coverage report -m
-  - coverage xml
 
-
-
+ - coverage report -m
+ - coverage xml 
 
 # allow gui output
-# services:
-#   - xvfb
+services:
+  - xvfb
 
 
 
