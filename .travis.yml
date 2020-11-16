@@ -13,8 +13,7 @@ install:
 #  script:
 #    - pytest --cov-report term --cov=backend backend/UnitTests/ 
 
-- stage: sonarcloud
-      name: "SolarCloud Scan"
+
 addons:
   sonarcloud:
     organization: "csc47300-project"
