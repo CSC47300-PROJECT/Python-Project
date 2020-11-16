@@ -21,8 +21,8 @@ install:
 #   after_success:
 #     - coverage report -m
 #     - coverage xml 
- - stage: sonarcloud
-      name: "SolarCloud Scan"
+#  - stage: sonarcloud
+#       name: "SolarCloud Scan"
 
 addons:
   sonarcloud:
