@@ -1,11 +1,13 @@
 language: python
 python:
- 
-  - "3.6"      # current default Python on Travis CI
- 
-# command to install dependencies
+  - "3.6"
+os: windows
+before_install:
+        - choco install python3
+        - export PATH="/c/Python37:/c/Python37/Scripts:$PATH"
+        - python -m pip install --upgrade pip wheel
 install:
-   - pip freeze > requirements.txt
+  - pip install -r requirements.txt
    - pip install coverage
 
 addons:
