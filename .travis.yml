@@ -1,7 +1,9 @@
+- stage: test
+      name: Python"
 language: python
-python:
+# python:
  
-  - "3.6"
+#   - "3.6"
 # command to install dependencies
 install:
   - pip install -r requirements.txt
@@ -12,11 +14,11 @@ install:
   - python3 HelloWorld.py
   - coverage run HelloWorld.py
    
-#  after_success:
-#         - coverage report -m
-#         - coverage xml
-#  - stage: sonarcloud
-#       name: "SolarCloud Scan"
+ after_success:
+        - coverage report -m
+        - coverage xml
+ - stage: sonarcloud
+      name: "SolarCloud Scan"
 
 addons:
   sonarcloud:
