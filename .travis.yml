@@ -19,7 +19,7 @@ addons:
   sonarcloud:
     organization: "csc47300-project"
     token:
-      secure: "travis encrypt da419e2499ff80dcf0e499918fe7d36e8e2361c6"
+      secure:  secure: "ha48TftAMGNaOjXm+NFafXBEkMIjlZ/0Am9+oCoIY6yQzqka09x6jBs2WjdjOdunsHAcDQ++xt3pdKs9T3MvYfQEafU9KLLlJjHwe7sxVXCAAB3dfBukvoJhgxBbqPDXi5kcFiJ70goH+SKLvdW80SYllwi4nL1qZZ8aZzp0q+ihPSWTTO8xO0RUkRYsWSobCKsPBBFZEgq0qLlydp3/ufhHoK/+NOw1LM4xzn5gTT2c0T0nHRocOTY67jqpH3J8dV5BTOt/t/KfuwpgX9kQB2ICd5rTRo7xbp0MYcEZ09RdyTLSvHZvIGoBjJtOFOarGkXXL/kY/Em8rD0BbYuWBBtOvM0vfKh27vZeoTL9tJNvpaomPtbG88YNShR5RsQM934yoYNoV1c7DOsvmXwU58IVgR7efjMGn969YddD/l4UBj7F9dUe+0S0pLgYuX2k33l5V1R1p6S4TlPcpKKNejVi01dNYUlSkUHf321kxyMjidTYknF3V7o/Urz2d7LQuzkSB850lE6me4Vrgl1KG4kz3Mj37AeCQgbWPU8/1dqH2k2+w0HL2pjZxRoHwojHhyzMRCxHeWgyHb8gzWJUrfO1MH9TcVQGRQWuO8L4K2uL/eI0+kHSvMzvxWAvToZUD9FVS64h4ajB2kPZ1PwIPJ3S+RRzR0OLOgGSseCM49I="
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
   - sonar-scanner
   
