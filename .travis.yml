@@ -5,7 +5,8 @@ python:
  
 # command to install dependencies
 install:
-  - pip freeze > requirements.txt
+   - pip install -r requirements.txt
+   - pip install coverage
 
 addons:
   sonarcloud:
@@ -18,7 +19,8 @@ script:
   - sonar-scanner
   
 script:
-  - echo "Hello, World!"
+  - python3 HelloWorld.py
+  - coverage HelloWorld.py
   
 # allow gui output
 services:
