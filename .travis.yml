@@ -7,6 +7,18 @@ python:
 install:
    - pip freeze > requirements.txt
    - pip install coverage
+   
+   
+ script:
+  - python3 HelloWorld.py
+  - coverage run HelloWorld.py
+after_success:
+ - coverage report -m
+ - coverage xml 
+
+# allow gui output
+services:
+  - xvfb
 
 addons:
   sonarcloud:
@@ -19,16 +31,7 @@ script:
   - sonar-scanner
 
 
-script:
-  - python3 HelloWorld.py
-  - coverage run HelloWorld.py
-after_success:
- - coverage report -m
- - coverage xml 
 
-# allow gui output
-services:
-  - xvfb
 
 
 
